@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoodWave — Feel the Vibe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="noise"></div>
+
+  <header>
+    <div class="logo">Mood<span>Wave</span></div>
+    <p class="tagline">What's your vibe today?</p>
+  </header>
+
+  <main>
+    <section class="mood-grid" id="moodGrid">
+      <button class="mood-btn" data-mood="happy">😄 Happy</button>
+      <button class="mood-btn" data-mood="sad">🌧️ Sad</button>
+      <button class="mood-btn" data-mood="angry">🔥 Angry</button>
+      <button class="mood-btn" data-mood="chill">🌊 Chill</button>
+      <button class="mood-btn" data-mood="romantic">🌹 Romantic</button>
+      <button class="mood-btn" data-mood="focused">🎯 Focused</button>
+      <button class="mood-btn" data-mood="anxious">⚡ Anxious</button>
+      <button class="mood-btn" data-mood="nostalgic">🍂 Nostalgic</button>
+    </section>
+
+    <section class="vibe-card" id="vibeCard">
+      <div class="vibe-inner">
+        <div class="vibe-emoji" id="vibeEmoji"></div>
+        <h2 class="vibe-title" id="vibeTitle"></h2>
+        <p class="vibe-quote" id="vibeQuote"></p>
+
+        <div class="vibe-tags" id="vibeTags"></div>
+
+        <div class="music-section">
+          <h3>🎵 Your Soundtrack</h3>
+          <div class="music-list" id="musicList"></div>
+        </div>
+
+        <div class="activity-section">
+          <h3>✨ Do This Now</h3>
+          <p class="activity-text" id="activityText"></p>
+        </div>
+
+        <button class="reset-btn" id="resetBtn">← Choose Again</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 💙 · MoodWave v1.0 · My First Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
